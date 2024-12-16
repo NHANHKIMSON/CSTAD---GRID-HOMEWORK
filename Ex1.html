@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: #fff;
+        }
+        .container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3,200px);
+            grid-template-rows: repeat(4,auto);
+        }
+        .box{
+            background-color: red;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .box:nth-child(1){
+            background-color: darkblue;
+            grid-row: 2 / span 3;
+            grid-column: 1 / span 2;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, autem libero. Ipsa nulla, at hic vel quos dolores enim magni, aliquam aperiam maxime sequi. Odit debitis repellendus quaerat nobis perferendis.</div>
+    </section>
+</body>
+</html>
