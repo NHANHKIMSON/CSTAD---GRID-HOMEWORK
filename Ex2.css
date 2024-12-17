@@ -22,6 +22,17 @@ header{
     color: #fff;
     position: relative;
 }
+header .follow{
+    background-color: rgba(28, 28, 28, 0.773);
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    padding: 6px 7px;
+    border-radius: 5px;
+}
+
 header > .text-header{
     position: absolute;
     bottom: 60px;
@@ -33,7 +44,7 @@ header > .text-header h1{
 }
 nav{
     width: 100%;
-    background-color: #ffffff51;
+    background-color: #ffffffa0;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -55,7 +66,7 @@ nav ul li:hover{
 }
 nav ul li a{
     color: var(--text-color-gray);
-    font-weight: 700;
+    font-weight: 600;
 }
 /* Content */
 main{
